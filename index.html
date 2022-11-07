@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            HTML DOM textContent Property
-        </title>
-    </head>
-    <body>
-        <h1>New name</h1>
-        <h2>HTML DOM textContent Property</h2>
-        <h3>Third header</h3>
-         
-        <button id = "geeks" onclick = "MyGeeks()">
-            Submit
-        </button>
-         
-        <p id = "sudo"></p>
 
-        <p>This is a &nbsp; regular space.</p>
-        <p>This is a &ensp; two spaces gap.</p>
-        <p>This is a &emsp; four spaces gap.</p>
-        <p>This is a &emsp; four spaces gap.</p>
- 
-  
-        <script>
+<head>
+    <title>
+        HTML DOM textContent Property
+    </title>
+</head>
+
+<body>
+    <h1>New name</h1>
+    <h2>HTML DOM textContent Property</h2>
+    <h3>Third header</h3>
+
+    <button id="geeks" onclick="MyGeeks()">
+        Submit
+    </button>
+
+    <p id="sudo"></p>
+
+    <p>This is a &nbsp; regular space.</p>
+    <p>This is a &ensp; two spaces gap.</p>
+    <p>This is a &emsp; four spaces gap.</p>
+    <p>This is a &emsp; four spaces gap.</p>
+
+
+    <script>
         function MyGeeks() {
             var text =
                 document.getElementById("geeks").textContent;
             document.getElementById("sudo").innerHTML = text;
         }
-        </script>
-    </body>
-</html>      
+    </script>
+
+    <p>This is text.</p>
+    
+</body>
+
+</html>
